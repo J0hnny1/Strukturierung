@@ -12,8 +12,6 @@ public class M01_Potenzen {
 
     public static double potenz(double x, int n)
     {
-        double result = Math.pow(x,n);
-        return result;
-
+        return Math.pow(x,n);
     }
 }

@@ -14,9 +14,8 @@ public static double hypothenuse(double a, double b)
         double powa = Math.pow(a, 2);
         double powb = Math.pow(b, 2);
         double pow = powa + powb;
-        double result = Math.sqrt(pow);
 
-        return result;
+        return Math.sqrt(pow);
     }
 
 
