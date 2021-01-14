@@ -6,10 +6,11 @@ public class M91_Potenzen {
         System.out.print("Result: ");
     }
 
-    public static double potenz(double x, double n)
+    public static int potenz(int x, int n)
     {
-        Math.sqrt();
-        double result = 0;
+        Math.sqrt(n , x);
+        int result = 0;
         return result;
+        //Hallo test test Commit von Pc
     }
 }

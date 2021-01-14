@@ -5,20 +5,15 @@
  */
 package u01_EVA_Prinzip;
 
-import util.Input;
+//import util.Input;
 
-/**
- *
- * @author ZimmerJonathan
- */
+
 public class A03_Eingabe {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-       int alter = Input.readInt("Wie alt sind Sie?") ;
-       int geburtsjahr = 2020 -alter;
+       int alter = util.Input.readInt("Wie alt sind sie?");
+        int geburtsjahr = 2020 -alter;
        System.out.println ("Sie sind im Jahr " + geburtsjahr + " gebohren");
     }
     
