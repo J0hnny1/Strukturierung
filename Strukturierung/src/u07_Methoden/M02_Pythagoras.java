@@ -1,4 +1,4 @@
-package M01_Methoden;
+package u07_Methoden;
 
 public class M02_Pythagoras {
     public static void main(String[] args)
