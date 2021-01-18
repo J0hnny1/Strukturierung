@@ -1,6 +1,6 @@
 package u07_Felder;
 
-public class F01_Feldausgabe_formatiert {
+public class F02_SortierenNeuFeld {
     public static void main(String[] args) {
         int[] zufall = new int[100];
 
@@ -14,6 +14,8 @@ public class F01_Feldausgabe_formatiert {
                 System.out.print(zufall[i]);
 
             }
+            int[] sortfeld = new int[100];
+
         }
     }
 }
