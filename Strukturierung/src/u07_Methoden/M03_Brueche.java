@@ -11,6 +11,5 @@ public class M03_Brueche {
             return z;
         else
             return ggt(n, z % n);
-
     }
 }
