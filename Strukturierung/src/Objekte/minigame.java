@@ -32,14 +32,10 @@ public class minigame {
 
             int choice = util.Input.readInt("Willst du dich (1) Ausruhen,(2) Trainieren(3) fortfahren");
             switch (choice) {
-                case 1 -> {
-                    witcher1.ausruhen();
-                    System.out.println("Ich habe jetzt " + witcher1.hp + "hp");
-                }
-                case 2 -> {
-                    witcher1.trainieren();
-                    System.out.println("Ich mache jetzt " + witcher1.damage + "damage");
-                }
+                case 1 : witcher1.ausruhen(); System.out.println("Ich habe jetzt " + witcher1.hp + "hp");
+                break;
+                case 2 : witcher1.trainieren(); System.out.println("Ich mache jetzt " + witcher1.damage + "damage");
+
             }
             System.out.println("Du wirst angegriffen von Gegner mit " + enemy2.hp + "health");
             enemy2.hp = enemy1.hp - witcher1.damage;
