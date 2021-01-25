@@ -1,6 +1,7 @@
 package Objekte;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class minigame {
     public static void main(String[] args) throws InterruptedException {
@@ -42,7 +43,10 @@ public class minigame {
                 System.out.println("Du bist tot!");
                 java.lang.System.exit(0);
             }
-            int choice = util.Input.readInt("Willst du dich (1) Ausruhen,(2) Trainieren(3) fortfahren");
+            Scanner ch = new Scanner(System.in);
+            System.out.println("Willst du dich (1) Ausruhen,(2) Trainieren(3) fortfahren");
+            int choice = ch.nextInt();
+                    //util.Input.readInt("Willst du dich (1) Ausruhen,(2) Trainieren(3) fortfahren");
             switch (choice) {
                 case 1 -> {
                     witcher1.ausruhen();
@@ -59,7 +63,10 @@ public class minigame {
                 System.out.println("Du bist tot!");
                 java.lang.System.exit(0);
             }
-            replay = util.Input.readString("Willst du nochmal spielen? yes,no");
+            Scanner re = new Scanner(System.in);
+            System.out.println("Willst du nochmal spielen? yes,no");
+             replay = re.nextLine();
+            //replay = util.Input.readString("Willst du nochmal spielen? yes,no");
         } while (replay.matches("[yY].*"));
 
 
