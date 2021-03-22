@@ -20,22 +20,22 @@ public class minigame {
 
             //Anfangsausgabe mit stats
             System.out.println("Dein Witcher hat " + witcher1.hp + "hp, " +
-                     witcher1.damage + " attack points");
+                    witcher1.damage + " attack points");
 
 
             System.out.println("Du wirst angegriffen!");
             //Schaden verechnung
 
-            if (random.nextInt(6)%2 ==0){
+            if (random.nextInt(6) % 2 == 0) {
                 witcher1.hp = witcher1.hp - enemy1.damage;
-            }else {
+            } else {
                 enemy1.hp = enemy1.hp - witcher1.damage;
             }
 
             Thread.sleep(1000);
             if (witcher1.hp > 0) {
                 System.out.println("Du hast noch " + witcher1.hp + " hp, und den gegner besiegt!");
-                if(random.nextInt()%3 == 0){
+                if (random.nextInt() % 3 == 0) {
                     System.out.println("Du hast eine health potion bekommen + 4 health");
                     witcher1.hp = witcher1.hp + 4;
                 }
@@ -46,7 +46,7 @@ public class minigame {
             Scanner ch = new Scanner(System.in);
             System.out.println("Willst du dich (1) Ausruhen,(2) Trainieren(3) fortfahren");
             int choice = ch.nextInt();
-                    //util.Input.readInt("Willst du dich (1) Ausruhen,(2) Trainieren(3) fortfahren");
+            //util.Input.readInt("Willst du dich (1) Ausruhen,(2) Trainieren(3) fortfahren");
             switch (choice) {
                 case 1 -> {
                     witcher1.ausruhen();
@@ -65,7 +65,7 @@ public class minigame {
             }
             Scanner re = new Scanner(System.in);
             System.out.println("Willst du nochmal spielen? yes,no");
-             replay = re.nextLine();
+            replay = re.nextLine();
             //replay = util.Input.readString("Willst du nochmal spielen? yes,no");
         } while (replay.matches("[yY].*"));
 

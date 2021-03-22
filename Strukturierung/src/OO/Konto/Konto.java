@@ -2,7 +2,7 @@ package OO.Konto;
 
 public class Konto {
     private final String kontoNummer;
-    private double kontoStand = 0D;
+    private double kontoStand;
     private double kreditLimit;
 
     public Konto(String kontoNummer) {
@@ -25,18 +25,14 @@ public class Konto {
         return kontoStand;
     }
 
-    public void einzahlen(double v) {
-        this.kontoStand += Math.abs(v);
+    public void einzahlen(double betrag) {
+        this.kontoStand += Math.abs(betrag);
     }
 
-    public void auszahlen(double v) {
-        double r = this.kontoStand - Math.abs(v);
-
-        if (r >= -kreditLimit) {
-            this.kontoStand = r;
-        } else {
-            System.out.println("Diese Auzahlung ist nicht möglich!");
-        }
+    public void auszahlen(double betrag) {
+        if (this.kreditLimit + this.kontoStand < betrag){
+            System.out.println("Diese Transaktion ist nicht Möglich!");
+        }else kontoStand -= betrag;
 
     }
 }
