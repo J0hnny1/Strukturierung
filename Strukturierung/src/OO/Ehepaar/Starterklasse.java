@@ -9,5 +9,8 @@ public class Starterklasse {
         System.out.println(kek.getEhefrau().getGeburtsdatum().getDatum());
 
         System.out.println(kek.getEhemann().getGeschlecht());
+
+        Person huhrensohn = new Person("sohn","Huren","M",new Datum(4,20,69));
+        System.out.println(huhrensohn.getVorname() + huhrensohn.getNachname());
     }
 }

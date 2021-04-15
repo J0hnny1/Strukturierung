@@ -17,10 +17,26 @@ public class Bruchrechner {
         return bruch2;
     }
 
-    public float getMultipliziert (){
-        return (bruch1.getNenner() * bruch2.getNenner()) / (bruch1.getZähler() * bruch2.getZähler());
+    public String getMultipliziert (){
+        float a = bruch1.getNenner() * bruch2.getNenner();
+        float b = bruch1.getZähler() * bruch2.getZähler();
+        String c = b + "/" + a;
+        return c;
     }
-    public float getDivision (){
-        return (bruch1.getZähler() * bruch2.getNenner()) / (bruch1.getNenner() * bruch2.getZähler());
+    public String getDivision (){
+        float a = bruch1.getZähler() * bruch2.getNenner();
+        float b = bruch1.getNenner() * bruch2.getZähler();
+        String c = a + "/" + b + ", " + a/b;
+        return c;
+    }
+    public float getAddition (){
+        float a = bruch1.getZähler() * bruch2.getNenner() + bruch2.getZähler() * bruch1.getNenner();
+        float b = bruch1.getNenner() * bruch2.getNenner();
+        return a/b;
+    }
+    public float getSubtraktion (){
+        float a = bruch1.getZähler() * bruch2.getNenner() - bruch2.getZähler() * bruch1.getNenner();
+        float b = bruch1.getNenner() * bruch2.getNenner();
+        return a/b;
     }
 }
