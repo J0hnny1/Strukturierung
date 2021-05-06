@@ -29,5 +29,4 @@ public class Bruchrechnen {
         System.out.println(c.getNenner());
         return c;
     }
-
 }
