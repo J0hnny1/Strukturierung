@@ -1,4 +1,4 @@
-package AF05_Struktogramme;
+package Aaefü;
 
 import util.Input;
 
