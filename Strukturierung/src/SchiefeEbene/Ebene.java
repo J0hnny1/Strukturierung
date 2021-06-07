@@ -1,11 +1,11 @@
 package SchiefeEbene;
 
 public class Ebene {
-    private float winkel;
-    private float laenge;
+    private double winkel;
+    private double laenge;
     private double reibKoeff;
 
-    public float getWinkel() {
+    public double getWinkel() {
         return winkel;
     }
 
@@ -13,7 +13,7 @@ public class Ebene {
         this.winkel = winkel;
     }
 
-    public float getLaenge() {
+    public double getLaenge() {
         return laenge;
     }
 
@@ -30,7 +30,7 @@ public class Ebene {
         this.reibKoeff = reibKoeff;
     }
 
-    public Ebene(float winkel, float laenge, double reibKoeff) {
+    public Ebene(double winkel, double laenge, double reibKoeff) {
         this.winkel = winkel;
         this.laenge = laenge;
         this.reibKoeff = reibKoeff;
