@@ -2,7 +2,7 @@ package SchiefeEbene;
 
 public class Kraefte {
     private String name;
-    private Vektor wert;
+    private Vektor vec;
 
     public String getName() {
         return name;
@@ -11,10 +11,14 @@ public class Kraefte {
     public void setName(String name) {
         this.name = name;
     }
-    public Vektor getWert() {
-        return wert;
+    public Vektor getVec() {
+        return vec;
     }
-    public void setWert(Vektor wert) {
-        this.wert = wert;
+    public void setVec(Vektor vec) {
+        this.vec = vec;
+    }
+
+    public Kraefte(String name) {
+        this.name = name;
     }
 }

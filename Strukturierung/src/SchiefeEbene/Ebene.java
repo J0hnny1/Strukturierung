@@ -1,17 +1,16 @@
 package SchiefeEbene;
 
 public class Ebene {
-    private float steigung;
+    private float winkel;
     private float laenge;
-    private float hoehe;
-    private float rauigkeit;
+    private double reibKoeff;
 
-    public float getSteigung() {
-        return steigung;
+    public float getWinkel() {
+        return winkel;
     }
 
-    public void setSteigung(float steigung) {
-        this.steigung = steigung;
+    public void setWinkel(float winkel) {
+        this.winkel = winkel;
     }
 
     public float getLaenge() {
@@ -22,19 +21,18 @@ public class Ebene {
         this.laenge = laenge;
     }
 
-    public float getHoehe() {
-        return hoehe;
+
+    public double getReibKoeff() {
+        return reibKoeff;
     }
 
-    public void setHoehe(float hoehe) {
-        this.hoehe = hoehe;
+    public void setReibKoeff(float reibKoeff) {
+        this.reibKoeff = reibKoeff;
     }
 
-    public float getRauigkeit() {
-        return rauigkeit;
-    }
-
-    public void setRauigkeit(float rauigkeit) {
-        this.rauigkeit = rauigkeit;
+    public Ebene(float winkel, float laenge, double reibKoeff) {
+        this.winkel = winkel;
+        this.laenge = laenge;
+        this.reibKoeff = reibKoeff;
     }
 }

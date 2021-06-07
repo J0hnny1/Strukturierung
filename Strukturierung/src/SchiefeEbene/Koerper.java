@@ -10,4 +10,8 @@ public class Koerper {
     public void setMasse(double masse) {
         this.masse = masse;
     }
+
+    public Koerper(double masse) {
+        this.masse = masse;
+    }
 }
