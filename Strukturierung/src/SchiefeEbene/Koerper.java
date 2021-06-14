@@ -2,6 +2,13 @@ package SchiefeEbene;
 
 public class Koerper {
     private double masse;
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+
 
     public double getMasse() {
         return masse;
