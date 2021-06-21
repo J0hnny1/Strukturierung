@@ -12,7 +12,7 @@ public class Darstellung {
         //var writer = new File();
     }
 
-    public Darstellung(Kraefte normalkraft, Kraefte hangabtriebskraft, Kraefte reibung) {
+    public Darstellung(Kraft normalkraft, Kraft hangabtriebskraft, Kraft reibung) {
 
     }
 }

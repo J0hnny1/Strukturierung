@@ -1,8 +1,12 @@
 package SchiefeEbene;
 
-public class Kraefte {
+public class Kraft {
     private String name;
     private Vektor vec;
+
+    public Kraft(String mog, Vektor v) {
+    }
+
 
     public String getName() {
         return name;
@@ -18,7 +22,11 @@ public class Kraefte {
         this.vec = vec;
     }
 
-    public Kraefte(String name) {
+    public Kraft(String name) {
         this.name = name;
+    }
+
+    public Kraft(Vektor vec) {
+        this.vec = vec;
     }
 }

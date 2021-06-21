@@ -10,8 +10,8 @@ public class Main {
         Ebene ebene1 = new Ebene(winkel, laenge, reibKoeff);
     }
 
-    public Kraefte KraftBerechnenGewichtskraft(double masse, double ortsfaktor, double reibungsKoeff, double winkel) {
-        Kraefte kraft = new Kraefte();
-        return kraft;
-    }
+    //public Kraft KraftBerechnenGewichtskraft(double masse, double ortsfaktor, double reibungsKoeff, double winkel) {
+        //Kraft kraft = new Kraft();
+        //return kraft;
+    //}
 }
